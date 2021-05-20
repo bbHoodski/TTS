@@ -102,7 +102,7 @@ class AngleProtoLossTests(unittest.TestCase):
 #     def test_output(self):
 #         items = libri_tts("/home/erogol/Data/Libri-TTS/train-clean-360/")
 #         ap = AudioProcessor(**c['audio'])
-#         dataset = MyDataset(ap, items, 1.6, 64, 10)
+#         dataset = TTSDataset(ap, items, 1.6, 64, 10)
 #         loader = DataLoader(dataset, batch_size=32, shuffle=False, num_workers=0, collate_fn=dataset.collate_fn)
 #         count = 0
 #         for mel, spk in loader:

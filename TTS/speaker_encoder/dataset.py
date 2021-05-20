@@ -6,7 +6,7 @@ import torch
 from torch.utils.data import Dataset
 
 
-class MyDataset(Dataset):
+class TTSDataset(Dataset):
     def __init__(
         self,
         ap,
