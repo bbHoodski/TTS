@@ -255,7 +255,7 @@ class Tacotron(TacotronAbstract):
             outputs['alignments_backward'] = alignments_backward
             outputs['decoder_outputs_backward'] = decoder_outputs_backward
         outputs.update({
-            'postnet_outputs': postnet_outputs,
+            'model_outputs': postnet_outputs,
             'decoder_outputs': decoder_outputs,
             'alignments': alignments,
             'stop_tokens': stop_tokens
@@ -287,7 +287,7 @@ class Tacotron(TacotronAbstract):
         postnet_outputs = self.last_linear(postnet_outputs)
         decoder_outputs = decoder_outputs.transpose(1, 2)
         outputs = {
-            'postnet_outputs': postnet_outputs,
+            'model_outputs': postnet_outputs,
             'decoder_outputs': decoder_outputs,
             'alignments': alignments,
             'stop_tokens': stop_tokens
